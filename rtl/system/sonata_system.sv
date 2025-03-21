@@ -704,6 +704,7 @@ module sonata_system
     .HeapBase        ( tl_main_pkg::ADDR_SPACE_SRAM            ),
     .TSMapBase       ( tl_main_pkg::ADDR_SPACE_REV_TAG         ),
     .TSMapSize       ( RevTagDepth                             ),
+    .RV32E           ( 1'b1                                    ),
     .RV32B           ( ibex_pkg::RV32BFull                     ),
     .ICache          ( 1'b1                                    )
   ) u_top_tracing (
